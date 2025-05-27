@@ -1,0 +1,51 @@
+/* Custom styles for Library Management System */
+body {
+    background: linear-gradient(135deg, #6b7280, #1e3a8a);
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #1e40af, #5b21b6);
+    transform: scale(1.05);
+}
+
+.nav-link {
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #e0f2fe;
+    transform: translateY(-2px);
+}
+
+.table-row {
+    transition: background 0.2s ease;
+}
+
+.table-row:hover {
+    background: #f3e8ff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
